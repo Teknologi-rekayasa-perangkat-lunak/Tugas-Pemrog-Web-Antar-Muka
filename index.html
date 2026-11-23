@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website Portofolio Profesional Alpian - Web Developer & IT Enthusiast">
+    <title>Alpian - Web Developer Portfolio | Beranda</title>
+    <!-- Favicon & Stylesheet External -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================================
+         HEADER & NAVIGASI KONSISTEN DENGAN PURE CSS DROPDOWN
+         ======================================================== -->
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <!-- Brand Logo -->
+            <a href="index.html#beranda" class="brand-logo" aria-label="Alpian Portfolio Homepage">
+                Alpian<span>.dev</span>
+                <span class="brand-dot"></span>
+            </a>
+
+            <!-- Checkbox Hack untuk Menu Hamburger Mobile (Tanpa JavaScript) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Buka Navigasi">
+            
+            <label for="nav-toggle" class="hamburger-btn" aria-label="Menu Hamburger" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigasi Menu -->
+            <nav class="nav-menu" aria-label="Menu Navigasi Utama">
+                <li class="nav-item">
+                    <a href="index.html#beranda" class="nav-link active-page">Beranda</a>
+                </li>
+
+                <!-- Dropdown Menu Tentang Saya (CSS Only: relative & absolute) -->
+                <li class="nav-item dropdown-parent" tabindex="0">
+                    <a href="#profil" class="nav-link">
+                        Tentang Saya
+                        <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a href="index.html#profil" class="dropdown-link">Profil</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="index.html#keahlian" class="dropdown-link">Keahlian</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="index.html#pengalaman" class="dropdown-link">Pengalaman</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="index.html#hobi" class="dropdown-link">Hobi</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="portofolio.html" class="nav-link">Portofolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="kontak.html" class="nav-link">Kontak</a>
+                </li>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- ========================================================
+             1. HERO / BERANDA SECTION
+             ======================================================== -->
+        <section id="beranda" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="status-ping"></span>
+                        <span class="badge-variant">Tersedia untuk Magang &amp; Kolaborasi Proyek</span>
+                    </div>
+
+                    <h1 class="hero-title">Halo, Saya Alpian</h1>
+                    <p class="section-subtitle">Web Developer &amp; IT Enthusiast</p>
+                    
+                    <p class="hero-lead">
+                        Mengembangkan antarmuka web modern, responsif, dan interaktif yang memadukan estetika visual dengan kode bersih berstandar industri.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="portofolio.html" class="btn btn-primary">
+                            <span>Lihat Karya Portofolio</span>
+                            <span>&rarr;</span>
+                        </a>
+                        <a href="kontak.html" class="btn btn-secondary">
+                            <span>Hubungi Saya</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Profile Card Widget -->
+                <div class="hero-card">
+                    <div class="hero-card-header">
+                        <img src="assets/img/profil.jpg" alt="Foto Profil Alpian" class="hero-card-avatar">
+                        <div class="hero-card-info">
+                            <h3>Alpian</h3>
+                            <p class="tagline-italic">Mahasiswa Teknik Informatika</p>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">4+</div>
+                            <div class="stat-label">Proyek Unggulan</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Responsif &amp; Bersih</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">NIM</div>
+                            <div class="stat-label">H263600007</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2026</div>
+                            <div class="stat-label">Web Dev Focus</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             2. TENTANG SAYA - PROFIL SECTION
+             * Desktop: float left foto (30% lebar kontainer), margin,
+             * label position: absolute dalam parent position: relative,
+             * deskripsi minimal 150 kata dalam 3 paragraf, text-align: justify,
+             * text-indent, line-height.
+             ======================================================== -->
+        <section id="profil" class="section">
+            <div class="container">
+                <span class="section-subtitle">Tentang Saya</span>
+                <h2 class="section-title">Profil Pribadi</h2>
+
+                <article class="profile-card clearfix">
+                    <!-- Foto Profil dengan Float Left pada Desktop & Label Absolute -->
+                    <div class="profile-photo-wrapper">
+                        <div class="profile-img-container">
+                            <img src="assets/img/profil.jpg" alt="Foto Resmi Alpian - Web Developer">
+                            <!-- Label Kecil: position absolute dalam relative -->
+                            <div class="badge-role badge-variant">Web Developer Pemula</div>
+                        </div>
+                    </div>
+
+                    <!-- Deskripsi Profil: Minimal 150 kata, 3 paragraf -->
+                    <div class="profile-desc">
+                        <div class="profile-desc-header">
+                            <h3>Alpian</h3>
+                            <p class="profile-meta-nim">NIM: H263600007 &bull; Program Studi Teknik Informatika</p>
+                        </div>
+
+                        <!-- Paragraf 1 (65 kata) -->
+                        <p>
+                            Halo! Perkenalkan, nama saya Alpian, seorang mahasiswa teknologi informasi yang memiliki dedikasi dan antusiasme mendalam dalam dunia pengembangan perangkat lunak, khususnya pemrograman antarmuka web modern. Sejak awal menempuh studi di bidang teknologi, saya selalu terpikat oleh bagaimana kode-kode terstruktur mampu bertransformasi menjadi visual antarmuka interaktif yang tidak hanya estetis, namun juga memberikan pengalaman pengguna yang intuitif, cepat, dan bermakna bagi setiap pengunjung.
+                        </p>
+
+                        <!-- Paragraf 2 (67 kata) -->
+                        <p>
+                            Dalam perjalanan mengeksplorasi rekayasa antarmuka digital, saya secara konsisten melatih keahlian teknis dalam HTML5 semantik, CSS3 modern dengan metodologi responsif, Flexbox, CSS Grid, serta logika JavaScript. Saya meyakini bahwa tampilan visual yang profesional berakar dari kode yang bersih, modular, dan aksesibel. Selain itu, saya terbiasa membangun antarmuka web yang dapat beradaptasi secara dinamis di berbagai resolusi layar, baik desktop beresolusi tinggi maupun perangkat smartphone.
+                        </p>
+
+                        <!-- Paragraf 3 (68 kata) -->
+                        <p>
+                            Sebagai calon profesional teknologi informasi, saya memiliki motivasi tinggi untuk terus mengembangkan keterampilan teknis melalui proyek-proyek praktis, eksplorasi teknologi terkini, serta pemecahan masalah secara terstruktur. Portofolio ini merupakan cerminan komitmen saya untuk terus belajar, berkolaborasi, dan menghasilkan karya digital berkualitas industri. Saya sangat terbuka untuk peluang kolaborasi, magang, maupun diskusi seputar pengembangan web, guna menghadirkan solusi teknologi yang memberikan dampak nyata.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             3. TENTANG SAYA - KEAHLIAN SECTION
+             ======================================================== -->
+        <section id="keahlian" class="section">
+            <div class="container">
+                <span class="section-subtitle">Kompetensi Teknis</span>
+                <h2 class="section-title">Keahlian Utama</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-icon">&#127760;</span>
+                            <span class="skill-level">Mahir</span>
+                        </div>
+                        <h3 class="skill-name">HTML5 Semantik</h3>
+                        <p class="tagline-italic">Struktur web aksesibel, SEO-friendly, dan ramah pembaca layar.</p>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" style="width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-icon">&#127912;</span>
+                            <span class="skill-level">Mahir</span>
+                        </div>
+                        <h3 class="skill-name">CSS3 &amp; Responsive Layout</h3>
+                        <p class="tagline-italic">Flexbox, CSS Grid, Media Queries, Transisi &amp; Keyframe animasi.</p>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-icon">&#9889;</span>
+                            <span class="skill-level">Menengah</span>
+                        </div>
+                        <h3 class="skill-name">JavaScript Modern</h3>
+                        <p class="tagline-italic">Manipulasi DOM interaktif, Fetch API, asynchronous programming.</p>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-icon">&#128187;</span>
+                            <span class="skill-level">Menengah</span>
+                        </div>
+                        <h3 class="skill-name">Tailwind &amp; CSS Framework</h3>
+                        <p class="tagline-italic">Utility-first CSS, modularisasi komponen, dan styling cepat.</p>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-icon">&#128736;</span>
+                            <span class="skill-level">Menengah</span>
+                        </div>
+                        <h3 class="skill-name">Git &amp; GitHub</h3>
+                        <p class="tagline-italic">Version control terpusat, kolaborasi branch, dan manajemen rilis.</p>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-icon">&#128065;</span>
+                            <span class="skill-level">Menengah</span>
+                        </div>
+                        <h3 class="skill-name">UI/UX Wireframing</h3>
+                        <p class="tagline-italic">Perancangan tata letak berorientasi kemudahan interaksi pengguna.</p>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" style="width: 78%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             4. TENTANG SAYA - PENGALAMAN SECTION
+             ======================================================== -->
+        <section id="pengalaman" class="section">
+            <div class="container">
+                <span class="section-subtitle">Rekam Jejak</span>
+                <h2 class="section-title">Pengalaman &amp; Proyek</h2>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <article class="timeline-card">
+                            <span class="timeline-year">2025 - Sekarang</span>
+                            <h3>Frontend Web Project Developer</h3>
+                            <p class="timeline-role">Proyek Mandiri &amp; Akademik</p>
+                            <p>
+                                Merancang dan mengimplementasikan berbagai arsitektur web responsif seperti platform digital perusahaan, pustaka komponen Tailwind UI, serta dashboard finansial cerdas yang mengutamakan performa loading optimal dan kemudahan akses di segala gawai.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <article class="timeline-card">
+                            <span class="timeline-year">2024 - 2025</span>
+                            <h3>Praktikum Pemrograman Antarmuka Web Lanjut</h3>
+                            <p class="timeline-role">Laboratorium Rekayasa Perangkat Lunak</p>
+                            <p>
+                                Menguasai konsep lanjut hierarki antarmuka web, navigasi interaktif tanpa JavaScript, tipografi proporsional dengan skala relatif, implementasi CSS Grid, Flexbox, serta standarisasi HTML5 W3C.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <article class="timeline-card">
+                            <span class="timeline-year">2024</span>
+                            <h3>Pengembangan Proyek Komunitas Digital</h3>
+                            <p class="timeline-role">Kontributor Desain &amp; Kode</p>
+                            <p>
+                                Berkolaborasi dalam eksplorasi antarmuka web modern bertema gelap, meriset efisiensi palet warna, konsistensi micro-interactions, serta standarisasi responsive breakpoint untuk layar gawai hingga desktop ultra-lebar.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             5. TENTANG SAYA - HOBI SECTION
+             ======================================================== -->
+        <section id="hobi" class="section">
+            <div class="container">
+                <span class="section-subtitle">Aktivitas Luang</span>
+                <h2 class="section-title">Hobi &amp; Minat</h2>
+
+                <div class="hobi-grid">
+                    <div class="hobi-card">
+                        <span class="hobi-icon">&#128187;</span>
+                        <h3>Eksplorasi Coding &amp; Desain</h3>
+                        <p>Mencoba framework antarmuka terkini, teknik CSS mutakhir, dan eksperimen tata letak kreatif.</p>
+                    </div>
+
+                    <div class="hobi-card">
+                        <span class="hobi-icon">&#128218;</span>
+                        <h3>Membaca Buku Teknologi</h3>
+                        <p>Mendalami literatur rekayasa perangkat lunak, tren industri IT, dan dokumentasi teknologi web.</p>
+                    </div>
+
+                    <div class="hobi-card">
+                        <span class="hobi-icon">&#127911;</span>
+                        <h3>Mendengarkan Musik</h3>
+                        <p>Menikmati alunan musik lo-fi dan instrumental saat berkonsentrasi memecahkan tantangan pemrograman.</p>
+                    </div>
+
+                    <div class="hobi-card">
+                        <span class="hobi-icon">&#127918;</span>
+                        <h3>Gaming &amp; Logika</h3>
+                        <p>Bermain permainan strategi dan teka-teki logika untuk mengasah daya analisis dan pemecahan masalah.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================================
+         CTA TOMBOL TETAP "HUBUNGI SAYA" (POSITION: FIXED PADA DESKTOP)
+         ======================================================== -->
+    <a href="kontak.html" class="floating-cta" title="Kirim Pesan ke Alpian">
+        <span class="pulse-dot"></span>
+        <span>Hubungi Saya</span>
+    </a>
+
+    <!-- ========================================================
+         FOOTER KONSISTEN
+         ======================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html#beranda" class="brand-logo">
+                        Alpian<span>.dev</span>
+                        <span class="brand-dot"></span>
+                    </a>
+                    <p>
+                        Website portofolio individu mahasiswa Teknik Informatika yang berfokus pada pengembangan antarmuka web profesional, modern, dan berorientasi pengguna.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigasi Halaman</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#beranda" class="footer-link">&bull; Beranda Utama</a></li>
+                        <li><a href="index.html#profil" class="footer-link">&bull; Profil Pribadi</a></li>
+                        <li><a href="index.html#keahlian" class="footer-link">&bull; Keahlian Teknis</a></li>
+                        <li><a href="portofolio.html" class="footer-link">&bull; Portofolio Proyek</a></li>
+                        <li><a href="kontak.html" class="footer-link">&bull; Kontak &amp; Diskusi</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Identitas Mahasiswa</h4>
+                    <div class="footer-student-info">
+                        <p>Nama: <span>Alpian</span></p>
+                        <p>NIM: <span>H263600007</span></p>
+                        <p>Mata Kuliah: <span>Pemrograman Antarmuka Web Lanjut</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Alpian | NIM: H263600007. Seluruh Hak Cipta Dilindungi.</p>
+                <p>Dibangun menggunakan HTML5 Semantik &amp; CSS3 Modern Responsif</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

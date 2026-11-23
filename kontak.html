@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hubungi Alpian (NIM: H263600007) - Kontak, Diskusi Proyek, dan Media Sosial">
+    <title>Alpian - Hubungi Saya | Kontak</title>
+    <!-- Favicon & Stylesheet External -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================================
+         HEADER & NAVIGASI KONSISTEN DENGAN PURE CSS DROPDOWN
+         ======================================================== -->
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <!-- Brand Logo -->
+            <a href="index.html#beranda" class="brand-logo" aria-label="Alpian Portfolio Homepage">
+                Alpian<span>.dev</span>
+                <span class="brand-dot"></span>
+            </a>
+
+            <!-- Checkbox Hack untuk Menu Hamburger Mobile (Tanpa JavaScript) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Buka Navigasi">
+            
+            <label for="nav-toggle" class="hamburger-btn" aria-label="Menu Hamburger" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigasi Menu -->
+            <nav class="nav-menu" aria-label="Menu Navigasi Utama">
+                <li class="nav-item">
+                    <a href="index.html#beranda" class="nav-link">Beranda</a>
+                </li>
+
+                <!-- Dropdown Menu Tentang Saya (CSS Only: relative & absolute) -->
+                <li class="nav-item dropdown-parent" tabindex="0">
+                    <a href="index.html#profil" class="nav-link">
+                        Tentang Saya
+                        <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a href="index.html#profil" class="dropdown-link">Profil</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="index.html#keahlian" class="dropdown-link">Keahlian</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="index.html#pengalaman" class="dropdown-link">Pengalaman</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="index.html#hobi" class="dropdown-link">Hobi</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="portofolio.html" class="nav-link">Portofolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="kontak.html" class="nav-link active-page">Kontak</a>
+                </li>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- ========================================================
+             KONTAK BANNER
+             ======================================================== -->
+        <section class="section" style="padding-bottom: 1.5rem;">
+            <div class="container">
+                <span class="section-subtitle">Mari Terhubung &amp; Berkolaborasi</span>
+                <h1 class="hero-title" style="font-size: var(--text-4xl);">Hubungi Saya</h1>
+                <p class="hero-lead" style="margin-top: 1rem;">
+                    Saya selalu antusias untuk mendiskusikan peluang kerja sama baru, proyek pengembangan antarmuka web, program magang industri, atau sekadar bertukar wawasan seputar teknologi web.
+                </p>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             KONTAK CONTENT SECTION
+             * Kartu kontak dengan border dan shadow,
+             * Nama, NIM, alamat email mailto, tautan media sosial,
+             * ajakan kerja sama/diskusi,
+             * visual hover tautan eksternal berbeda dari tautan navigasi.
+             ======================================================== -->
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <div class="contact-grid">
+
+                    <!-- Kartu Informasi Kontak Lengkap -->
+                    <article class="contact-card-info">
+                        <h3>Informasi Kontak</h3>
+                        <p class="contact-lead">
+                            Jangan ragu untuk menghubungi saya melalui saluran komunikasi resmi di bawah ini. Saya akan dengan senang hati merespons pesan Anda secepat mungkin.
+                        </p>
+
+                        <ul class="contact-details-list">
+                            <!-- Nama Lengkap -->
+                            <li class="contact-detail-item">
+                                <div class="contact-icon-box" aria-hidden="true">&#128100;</div>
+                                <div class="contact-detail-text">
+                                    <h4>Nama Lengkap</h4>
+                                    <p>Alpian</p>
+                                </div>
+                            </li>
+
+                            <!-- NIM Mahasiswa -->
+                            <li class="contact-detail-item">
+                                <div class="contact-icon-box" aria-hidden="true">&#127891;</div>
+                                <div class="contact-detail-text">
+                                    <h4>Nomor Induk Mahasiswa (NIM)</h4>
+                                    <p>H263600007</p>
+                                </div>
+                            </li>
+
+                            <!-- Email Resmi (Dapat diklik menggunakan mailto:) -->
+                            <li class="contact-detail-item">
+                                <div class="contact-icon-box" aria-hidden="true">&#9993;</div>
+                                <div class="contact-detail-text">
+                                    <h4>Alamat Email</h4>
+                                    <p>
+                                        <a href="mailto:alpian.dev@gmail.com" class="email-link" title="Kirim surel langsung ke Alpian">
+                                            alpian.dev@gmail.com
+                                        </a>
+                                    </p>
+                                </div>
+                            </li>
+
+                            <!-- Lokasi / Afiliasi -->
+                            <li class="contact-detail-item">
+                                <div class="contact-icon-box" aria-hidden="true">&#128205;</div>
+                                <div class="contact-detail-text">
+                                    <h4>Lokasi &amp; Status</h4>
+                                    <p>Indonesia &bull; Mahasiswa Aktif TI</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Tautan Media Sosial Eksternal (Hover Visual Berbeda) -->
+                        <div class="social-links-wrapper">
+                            <h4 class="social-title">Tautan Media Sosial &amp; Jejaring</h4>
+                            <div class="social-buttons">
+                                <!-- Facebook -->
+                                <a href="https://www.facebook.com/Nova%20Pratama.id" target="_blank" rel="noopener noreferrer" class="social-btn" title="Kunjungi Akun Facebook Resmi">
+                                    <span>&#128172;</span>
+                                    <span>Facebook</span>
+                                </a>
+
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/in/alpian-web-developer-7a16522bb?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-btn" title="Koneksi di LinkedIn Profesional">
+                                    <span>&#128188;</span>
+                                    <span>LinkedIn</span>
+                                </a>
+
+                                <!-- Live Portfolio Vercel -->
+                                <a href="https://alpian-porto.vercel.app/" target="_blank" rel="noopener noreferrer" class="social-btn" title="Kunjungi Portofolio Vercel Live">
+                                    <span>&#127760;</span>
+                                    <span>Portofolio Vercel</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Formulir Pesan & Ajakan Berdiskusi -->
+                    <article class="contact-card-form">
+                        <h3 style="font-size: var(--text-2xl); margin-bottom: 0.5rem; color: #ffffff;">
+                            Ajakan Kolaborasi &amp; Diskusi
+                        </h3>
+                        <p style="font-size: var(--text-sm); color: var(--text-muted); margin-bottom: 1.75rem; line-height: 1.6;">
+                            Punya ide proyek, membutuhkan pengembang antarmuka web, atau ingin berdiskusi teknis seputar pemrograman web? Kirimkan pesan melalui formulir interaktif di bawah:
+                        </p>
+
+                        <form action="mailto:alpian.dev@gmail.com" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="nama" class="form-label">Nama Anda *</label>
+                                <input type="text" id="nama" name="nama" class="form-control" placeholder="Masukkan nama lengkap Anda" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Alamat Email *</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="nama@email.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subjek" class="form-label">Subjek Diskusi *</label>
+                                <input type="text" id="subjek" name="subjek" class="form-control" placeholder="Contoh: Diskusi Proyek Web / Penawaran Magang" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pesan" class="form-label">Pesan / Ide Kolaborasi *</label>
+                                <textarea id="pesan" name="pesan" class="form-control" placeholder="Tuliskan pesan, pertanyaan, atau detail kolaborasi Anda di sini..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <span>Kirim Pesan Sekarang</span>
+                                <span>&rarr;</span>
+                            </button>
+                        </form>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================================
+         CTA TOMBOL TETAP "HUBUNGI SAYA" (POSITION: FIXED PADA DESKTOP)
+         ======================================================== -->
+    <a href="kontak.html" class="floating-cta" title="Kirim Pesan ke Alpian">
+        <span class="pulse-dot"></span>
+        <span>Hubungi Saya</span>
+    </a>
+
+    <!-- ========================================================
+         FOOTER KONSISTEN
+         ======================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html#beranda" class="brand-logo">
+                        Alpian<span>.dev</span>
+                        <span class="brand-dot"></span>
+                    </a>
+                    <p>
+                        Website portofolio individu mahasiswa Teknik Informatika yang berfokus pada pengembangan antarmuka web profesional, modern, dan berorientasi pengguna.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigasi Halaman</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#beranda" class="footer-link">&bull; Beranda Utama</a></li>
+                        <li><a href="index.html#profil" class="footer-link">&bull; Profil Pribadi</a></li>
+                        <li><a href="index.html#keahlian" class="footer-link">&bull; Keahlian Teknis</a></li>
+                        <li><a href="portofolio.html" class="footer-link">&bull; Portofolio Proyek</a></li>
+                        <li><a href="kontak.html" class="footer-link">&bull; Kontak &amp; Diskusi</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Identitas Mahasiswa</h4>
+                    <div class="footer-student-info">
+                        <p>Nama: <span>Alpian</span></p>
+                        <p>NIM: <span>H263600007</span></p>
+                        <p>Mata Kuliah: <span>Pemrograman Antarmuka Web Lanjut</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Alpian | NIM: H263600007. Seluruh Hak Cipta Dilindungi.</p>
+                <p>Dibangun menggunakan HTML5 Semantik &amp; CSS3 Modern Responsif</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

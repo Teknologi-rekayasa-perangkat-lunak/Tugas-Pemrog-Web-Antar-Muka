@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Koleksi Portofolio Proyek Web Development oleh Alpian - NIM: H263600007">
+    <title>Alpian - Karya &amp; Portofolio Proyek</title>
+    <!-- Favicon & Stylesheet External -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================================
+         HEADER & NAVIGASI KONSISTEN DENGAN PURE CSS DROPDOWN
+         ======================================================== -->
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <!-- Brand Logo -->
+            <a href="index.html#beranda" class="brand-logo" aria-label="Alpian Portfolio Homepage">
+                Alpian<span>.dev</span>
+                <span class="brand-dot"></span>
+            </a>
+
+            <!-- Checkbox Hack untuk Menu Hamburger Mobile (Tanpa JavaScript) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Buka Navigasi">
+            
+            <label for="nav-toggle" class="hamburger-btn" aria-label="Menu Hamburger" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigasi Menu -->
+            <nav class="nav-menu" aria-label="Menu Navigasi Utama">
+                <li class="nav-item">
+                    <a href="index.html#beranda" class="nav-link">Beranda</a>
+                </li>
+
+                <!-- Dropdown Menu Tentang Saya (CSS Only: relative & absolute) -->
+                <li class="nav-item dropdown-parent" tabindex="0">
+                    <a href="index.html#profil" class="nav-link">
+                        Tentang Saya
+                        <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a href="index.html#profil" class="dropdown-link">Profil</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="index.html#keahlian" class="dropdown-link">Keahlian</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="index.html#pengalaman" class="dropdown-link">Pengalaman</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="index.html#hobi" class="dropdown-link">Hobi</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="portofolio.html" class="nav-link active-page">Portofolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="kontak.html" class="nav-link">Kontak</a>
+                </li>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- ========================================================
+             PORTOFOLIO BANNER
+             ======================================================== -->
+        <section class="section" style="padding-bottom: 2rem;">
+            <div class="container">
+                <span class="section-subtitle">Showcase Karya Terbaik</span>
+                <h1 class="hero-title" style="font-size: var(--text-4xl);">Galeri Portofolio Proyek</h1>
+                <p class="hero-lead" style="margin-top: 1rem;">
+                    Berikut adalah kompilasi hasil rancangan antarmuka web yang telah saya bangun, berorientasi pada ketelitian desain visual, kenyamanan pengguna, struktur kode semantik, dan responsivitas layout multi-perangkat.
+                </p>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             PORTOFOLIO GRID SECTION
+             * Kartu beberapa kolom di desktop (1440px),
+             * Menyesuaikan di tablet (768px),
+             * Satu kolom di smartphone (390px/480px).
+             ======================================================== -->
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <div class="portfolio-grid">
+
+                    <!-- PROYEK 1: Platform Kami -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/img/proyek1.jpg" alt="Antarmuka Website Platform Solusi Bisnis Digital">
+                            <div class="project-tag badge-variant">Corporate Platform</div>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Platform Solusi Bisnis Terintegrasi</h3>
+                                <p class="project-desc">
+                                    Aplikasi landing page korporat bertema gelap modern dengan navigasi intuitif, hero section interaktif, call-to-action dinamis, serta integrasi showcase kepercayaan mitra teknologi global seperti Amazon, Microsoft, Facebook, dan LinkedIn.
+                                </p>
+                            </div>
+
+                            <div>
+                                <div class="project-tech">
+                                    <span class="tech-badge">HTML5 Semantik</span>
+                                    <span class="tech-badge">CSS3 Flexbox</span>
+                                    <span class="tech-badge">Responsive Grid</span>
+                                    <span class="tech-badge">Dark Mode UI</span>
+                                </div>
+
+                                <div class="project-links">
+                                    <a href="https://alpian-porto.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link" title="Buka Live Preview di Vercel">
+                                        <span>Buka Live Demo</span>
+                                        <span>&nearr;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROYEK 2: MYOffice -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/img/proyek2.jpg" alt="Antarmuka Website Workspace MYOffice">
+                            <div class="project-tag badge-variant">Workspace System</div>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>MYOffice - Workspace &amp; Enterprise Portal</h3>
+                                <p class="project-desc">
+                                    Platform layanan ruang kantor modern dan persewaan fasilitas kerja cerdas. Menampilkan estetika visual minimalis, penekanan hierarki tipografi judul yang kuat, serta tata letak asimetris yang elegan untuk presentasi ruangan kerja profesional.
+                                </p>
+                            </div>
+
+                            <div>
+                                <div class="project-tech">
+                                    <span class="tech-badge">CSS Grid</span>
+                                    <span class="tech-badge">Asymmetric Layout</span>
+                                    <span class="tech-badge">Mobile First</span>
+                                    <span class="tech-badge">Web Accessibility</span>
+                                </div>
+
+                                <div class="project-links">
+                                    <a href="https://alpian-porto.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link" title="Buka Live Preview di Vercel">
+                                        <span>Buka Live Demo</span>
+                                        <span>&nearr;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROYEK 3: Modernify -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/img/proyek3.jpg" alt="Antarmuka Website Komponen Modernify">
+                            <div class="project-tag badge-variant">Design System</div>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Modernify - Tailwind Component Library</h3>
+                                <p class="project-desc">
+                                    Website pustaka komponen antarmuka web berbasis komunitas Tailwind CSS. Dilengkapi dengan bilah pencarian interaktif, tipografi kontras tinggi yang menawan, serta pratinjau live coding untuk mempermudah perancangan website profesional tanpa beban.
+                                </p>
+                            </div>
+
+                            <div>
+                                <div class="project-tech">
+                                    <span class="tech-badge">Tailwind CSS</span>
+                                    <span class="tech-badge">Component UI</span>
+                                    <span class="tech-badge">Interactive Search</span>
+                                    <span class="tech-badge">Clean Code</span>
+                                </div>
+
+                                <div class="project-links">
+                                    <a href="https://alpian-porto.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link" title="Buka Live Preview di Vercel">
+                                        <span>Buka Live Demo</span>
+                                        <span>&nearr;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROYEK 4: WealthWise -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/img/proyek4.jpg" alt="Antarmuka Smart Dashboard WealthWise">
+                            <div class="project-tag badge-variant">FinTech Tool</div>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>WealthWise - Smart Wealth &amp; Finance Tool</h3>
+                                <p class="project-desc">
+                                    Aplikasi dasbor finansial pintar untuk memantau investasi, alokasi kekayaan, dan analitik keuangan cerdas secara terpadu. Menggabungkan aksen warna ungu dan biru neon futuristik dengan visualisasi data yang responsif di seluruh layar gawai.
+                                </p>
+                            </div>
+
+                            <div>
+                                <div class="project-tech">
+                                    <span class="tech-badge">Financial UI</span>
+                                    <span class="tech-badge">Modern Neon Accent</span>
+                                    <span class="tech-badge">Dashboard Layout</span>
+                                    <span class="tech-badge">HTML5 / CSS3</span>
+                                </div>
+
+                                <div class="project-links">
+                                    <a href="https://alpian-porto.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link" title="Buka Live Preview di Vercel">
+                                        <span>Buka Live Demo</span>
+                                        <span>&nearr;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================================
+         CTA TOMBOL TETAP "HUBUNGI SAYA" (POSITION: FIXED PADA DESKTOP)
+         ======================================================== -->
+    <a href="kontak.html" class="floating-cta" title="Kirim Pesan ke Alpian">
+        <span class="pulse-dot"></span>
+        <span>Hubungi Saya</span>
+    </a>
+
+    <!-- ========================================================
+         FOOTER KONSISTEN
+         ======================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html#beranda" class="brand-logo">
+                        Alpian<span>.dev</span>
+                        <span class="brand-dot"></span>
+                    </a>
+                    <p>
+                        Website portofolio individu mahasiswa Teknik Informatika yang berfokus pada pengembangan antarmuka web profesional, modern, dan berorientasi pengguna.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigasi Halaman</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#beranda" class="footer-link">&bull; Beranda Utama</a></li>
+                        <li><a href="index.html#profil" class="footer-link">&bull; Profil Pribadi</a></li>
+                        <li><a href="index.html#keahlian" class="footer-link">&bull; Keahlian Teknis</a></li>
+                        <li><a href="portofolio.html" class="footer-link">&bull; Portofolio Proyek</a></li>
+                        <li><a href="kontak.html" class="footer-link">&bull; Kontak &amp; Diskusi</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Identitas Mahasiswa</h4>
+                    <div class="footer-student-info">
+                        <p>Nama: <span>Alpian</span></p>
+                        <p>NIM: <span>H263600007</span></p>
+                        <p>Mata Kuliah: <span>Pemrograman Antarmuka Web Lanjut</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Alpian | NIM: H263600007. Seluruh Hak Cipta Dilindungi.</p>
+                <p>Dibangun menggunakan HTML5 Semantik &amp; CSS3 Modern Responsif</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
